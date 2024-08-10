@@ -250,3 +250,31 @@ section.about-me>.container>.text-container>.buttons {
     margin-top: -55px;
     margin-bottom: 12px;
 }
+
+/* contact-me section */
+
+.contact-me {
+    background-color: #00c6ae;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+}
+
+.contact-me > p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-me > button {
+    background-color: #ffdd55;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 100px;
+    box-shadow: -12px 12px 3px #000;
+    border-radius: 15px;
+    border: 0;
+}
