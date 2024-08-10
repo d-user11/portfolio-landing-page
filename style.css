@@ -1,14 +1,35 @@
+/* general */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 3px solid #f00; */
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #ffdd55;
 }
+
+/* DRY */
+.buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.buttons > button {
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px #f00;
+}
+
+/* header section */
 
 header {
     display: flex;
@@ -16,9 +37,22 @@ header {
     align-items: center;
     padding: 20px 60px;
     background-color: #000;
-    border-bottom-left-radius:  30px;
+    border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
+.logo {
+    background-color: #ffdd55;
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 5px 5px #fff;
+}
+
+/* navigation bar */
 
 nav>ul {
     list-style: none;
@@ -37,13 +71,41 @@ nav>ul>li>a:hover {
     color: #ff00ff;
 }
 
-.logo {
-    background-color: #ffdd55;
-    color: #000;
-    font-size: 30px;
+/* hero section */
+
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+
+}
+
+section.hero>.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+section.hero>.text-container>h1 {
+    font-size: 50px;
     font-weight: 800;
-    padding: 10px;
-    border: 2px solid #000;
+}
+
+section.hero>.text-container>p {
+    font-size: 30px;
+    font-weight: 400;
+    color: #404457;
+}
+
+section.hero>img {
+    width: 450px;
+    border: 3px solid #000;
     border-radius: 15px;
-    box-shadow: 5px 5px #fff;
+    box-shadow: 10px 10px #000;
+    background-color: #00c6ae;
 }
